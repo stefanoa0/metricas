@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cálculo da métrica Pontos por Função</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="PontosPorFuncao.php" method="POST">
+            Arqiovos Internos:
+            <input name="ArquivosInternos" type="number" required="required" ><br/>
+            Interfaces Externas:
+            <input name="InterfacesExternas" type="number" required="required" ><br/>
+            Entradas Externas:
+            <input name="EntradasExternas" type="number" required="required" ><br/>
+            Saídas Externas:
+            <input name="SaidasExternas" type="number" required="required" ><br/>
+            Consultas:
+            <input name="Consultas" type="number" required="required" ><br/>
+
+            1. O sistema requer salvamento (backup)? (0 a 5)
+            <input name="questao1" type="number" max="5" min="0" required="required" ><br/>
+            2. São necessárias comunicações de dados especializadas para transferir informações para a aplicação ou da aplicação? (0 a 5)
+            <input name="questao2" type="number" max="5" min="0" required="required" ><br/>
+            3. Há funções de processamento distribuído? (0 a 5)
+            <input name="questao3" type="number" max="5" min="0" required="required" ><br/>
+            4. O desempenho é crítico? (0 a 5)
+            <input name="questao4" type="number" max="5" min="0" required="required" ><br/>
+            5. O sistema rodará em um ambiente operacional existente e intensamente utilizado? (0 a 5)
+            <input name="questao5" type="number" max="5" min="0" required="required" ><br/>
+            6. O sistema requer entrada de dados on-line? (0 a 5)
+            <input name="questao6" type="number" max="5" min="0" required="required" ><br/>
+            7. A entrada on-line de dados requer que a transação de entrada seja composta em múltiplas telas ou operações? (0 a 5) 
+            <input name="questao7" type="number" max="5" min="0" required="required" ><br/>
+            8. Os ILFs (arquivos lógicos) são atualizados on-line? (0 a 5)
+            <input name="questao8" type="number" max="5" min="0" required="required" ><br/>
+            9. As entradas, saídas, arquivos ou consultas são complexas? (0 a 5)
+            <input name="questao9" type="number" max="5" min="0" required="required" ><br/>
+            10. O processamento Interno é complexo? (0 a 5)
+            <input name="questao10" type="number" max="5" min="0" required="required" ><br/>
+            11. O código é projetado para ser reutilizável? (0 a 5)
+            <input name="questao11" type="number" max="5" min="0" required="required" ><br/>
+            12. A conversão e Instalação estão incluídas no projeto? (0 a 5)
+            <input name="questao12" type="number" max="5" min="0" required="required" ><br/>
+            13. O sistema é projetado para múltiplas Instalações em diferentes organizações? (0 a 5) 
+            <input name="questao13" type="number" max="5" min="0" required="required" ><br/>
+            14. A aplicação é projetada para facilitar a troca e o uso pelo usuário? (0 a 5)
+            <input name="questao14" type="number" max="5" min="0" required="required" ><br/>
+			
+			<input type="Submit" value="Calcular PF">
+        </form>
+        
+    </body>
+</html>
